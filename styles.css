@@ -1302,6 +1302,14 @@ h2 {
   transform: translateY(0);
 }
 
+.is-enhanced .work-card.reveal,
+.is-enhanced .hero__button.reveal,
+.is-enhanced .case-link.reveal,
+.is-enhanced .contact__link.reveal {
+  opacity: 1;
+  transform: none;
+}
+
 .work-card.reveal,
 .feature-card.reveal,
 .price-card.reveal,

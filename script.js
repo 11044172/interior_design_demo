@@ -180,7 +180,7 @@ const observer = new IntersectionObserver(
       if (!entry.isIntersecting) return;
       entry.target.classList.add("is-in");
       if (entry.target.matches("[data-count]")) startCounter(entry.target);
-      entry.target.querySelectorAll?.("[data-count]").forEach(startCounter);
+      entry.target.querySelectorAll("[data-count]").forEach(startCounter);
     });
   },
   { threshold: 0.22 }
