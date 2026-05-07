@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Office Case | Lean Dev Studio Interior Demo</title>
+    <meta
+      name="description"
+      content="Office and showroom interior case detail page for the Lean Dev Studio interior website demo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true">
+      <span class="cursor__ring"></span>
+      <span class="cursor__dot"></span>
+      <span class="cursor__label">VIEW</span>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand magnetic" href="index.html#top" data-cursor="HOME">LDS / Interior</a>
+      <nav aria-label="Primary navigation">
+        <a class="magnetic" href="index.html#showcase" data-cursor="WORKS">Showcase</a>
+        <a class="magnetic" href="index.html#process" data-cursor="FLOW">Service</a>
+        <a class="magnetic" href="index.html#cms" data-cursor="CMS">CMS</a>
+        <a class="magnetic" href="index.html#seo" data-cursor="SEO">SEO</a>
+        <a class="magnetic" href="index.html#pricing" data-cursor="PRICE">Pricing</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero case-hero">
+        <img class="hero__image" src="assets/case-office.jpg" alt="高級辦公展間案例" />
+        <div class="hero__shade" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="eyebrow reveal">Case 03 / Office</p>
+          <h1 class="reveal">Layered Office Studio</h1>
+          <p class="hero__copy reveal">
+            辦公與展間案例重視信任感、機能與品牌秩序。此頁透過清楚資訊層級與細膩動畫，讓B2B客戶能迅速理解空間如何支援會議、展示與日常工作。
+          </p>
+          <a class="hero__button magnetic reveal" href="index.html#showcase" data-cursor="BACK">Back to Works</a>
+          <div class="case-meta reveal" aria-label="Project metadata">
+            <div><span>Type</span><strong>Office</strong></div>
+            <div><span>Area</span><strong>36 Ping</strong></div>
+            <div><span>Location</span><strong>Hsinchu</strong></div>
+            <div><span>Year</span><strong>2026</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section case-intro section-motion section-motion--light">
+        <div class="case-intro__lead">
+          <p class="eyebrow reveal">Project Story</p>
+          <h2 class="reveal">在效率與品牌形象之間，建立穩定的工作場景。</h2>
+        </div>
+        <div class="case-points">
+          <p class="case-intro__copy reveal">
+            辦公展間案例頁適合用更清楚的資訊架構呈現。訪客通常帶著明確需求而來，因此頁面以機能區塊、動線配置、會議接待與展示需求來說明空間價值。
+          </p>
+          <article class="case-point reveal">
+            <span>01</span>
+            <h3>接待層次</h3>
+            <p>入口與會議區以一致的品牌語彙延伸，讓第一次到訪的客戶能感受到專業與穩定。</p>
+          </article>
+          <article class="case-point reveal">
+            <span>02</span>
+            <h3>工作效率</h3>
+            <p>將開放辦公、討論區與收納牆整合，降低動線干擾，讓日常使用與形象展示取得平衡。</p>
+          </article>
+          <article class="case-point reveal">
+            <span>03</span>
+            <h3>展示彈性</h3>
+            <p>展間牆面與燈光可依新品、簡報或客戶拜訪切換，案例頁則用段落呈現可變機能。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section case-gallery section-motion section-motion--dark" aria-label="Office gallery">
+        <figure class="reveal">
+          <img src="assets/case-office-gallery-01.png" alt="辦公展間主空間" />
+          <figcaption>Office / Trust Layer</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="assets/case-office-gallery-02.png" alt="辦公展間展示細節" />
+          <figcaption>Detail / Display Rhythm</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section case-next section-motion section-motion--dark section-motion--linger">
+        <div>
+          <p class="eyebrow reveal">Back to First Case</p>
+          <h2 class="reveal">回到住宅案例，重新感受材質與光線的細節。</h2>
+        </div>
+        <a class="case-link magnetic reveal" href="case-residence.html" data-cursor="NEXT">View Residence</a>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

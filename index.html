@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lean Dev Studio | Interior Web Demo</title>
+    <meta
+      name="description"
+      content="Interior design studio website demo by Lean Dev Studio. Premium portfolio, CMS, SEO, multilingual support, and maintenance plans."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true">
+      <span class="cursor__ring"></span>
+      <span class="cursor__dot"></span>
+      <span class="cursor__label">VIEW</span>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand magnetic" href="#top" data-cursor="HOME">LDS / Interior</a>
+      <nav aria-label="Primary navigation">
+        <a class="magnetic" href="#showcase" data-cursor="WORKS">Showcase</a>
+        <a class="magnetic" href="#process" data-cursor="FLOW">Service</a>
+        <a class="magnetic" href="#cms" data-cursor="CMS">CMS</a>
+        <a class="magnetic" href="#seo" data-cursor="SEO">SEO</a>
+        <a class="magnetic" href="#pricing" data-cursor="PRICE">Pricing</a>
+      </nav>
+      <div class="language-switch" aria-label="Language switch">
+        <button class="is-active" type="button" data-lang="zh">繁中</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <img
+          class="hero__image"
+          src="assets/hero-interior.png"
+          alt="Premium interior space"
+        />
+        <div class="hero__shade" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="eyebrow reveal">Interior Web Experience</p>
+          <h1 class="reveal">
+            Websites that<br />
+            make spaces felt.
+          </h1>
+          <p class="hero__copy reveal" data-i18n="heroCopy">
+            為台灣室內設計公司打造的高質感網站 Demo。以作品集、品牌敘事、動態互動、CMS 後台與 SEO 基礎設定，讓客戶在第一次瀏覽時就理解你的設計價值。
+          </p>
+          <div class="hero__actions reveal">
+            <a class="hero__button magnetic" href="#showcase" data-cursor="SCROLL">
+              View Demo
+            </a>
+            <a class="hero__button hero__button--ghost magnetic" href="#studio" data-cursor="LDS">
+              About LDS
+            </a>
+          </div>
+        </div>
+        <div class="hero__index reveal" aria-label="Demo highlights">
+          <span data-count="8">0</span>
+          <small>premium modules</small>
+        </div>
+        <div class="scroll-mark" aria-hidden="true"></div>
+      </section>
+
+      <section class="logo-band" aria-label="Service keywords">
+        <div class="marquee">
+          <span>PORTFOLIO</span>
+          <span>CMS</span>
+          <span>SEO</span>
+          <span>MULTILINGUAL</span>
+          <span>MAINTENANCE</span>
+          <span>LINE FLOW</span>
+          <span>PORTFOLIO</span>
+          <span>CMS</span>
+          <span>SEO</span>
+          <span>MULTILINGUAL</span>
+        </div>
+      </section>
+
+      <section class="zoom-experience" aria-label="Scroll zoom experience">
+        <div class="zoom-stage">
+          <div class="zoom-frame">
+            <img src="assets/hero-interior.png" alt="Interior portfolio zoom sample" />
+            <div class="zoom-frame__shade" aria-hidden="true"></div>
+          </div>
+          <div class="zoom-copy">
+            <p class="eyebrow">Scroll Storytelling</p>
+            <h2>Let each project open like a quiet gallery.</h2>
+            <p data-i18n="zoomCopy">
+              作品照片不只是排列，而是透過節奏、留白與互動，引導訪客慢慢進入空間。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase section-motion" id="showcase">
+        <div class="section-head">
+          <p class="eyebrow reveal">Showcase</p>
+          <h2 class="reveal">讓每一個空間案例，成為客戶想諮詢的理由。</h2>
+          <p class="section-copy reveal" data-i18n="showcaseCopy">
+            讓客戶還沒見面，就先感受到你的設計品味、專業程度與作品價值。
+          </p>
+        </div>
+        <div class="work-grid">
+          <article class="work-card reveal magnetic" data-cursor="HOME">
+            <img src="assets/case-residence.jpg" alt="高級住宅空間案例" />
+            <div class="work-card__body">
+              <span>01</span>
+              <h3>住宅空間</h3>
+              <a href="case-residence.html" data-i18n="caseButton" aria-label="閱讀更多住宅空間案例">
+                閱讀更多
+              </a>
+            </div>
+          </article>
+          <article class="work-card reveal magnetic" data-cursor="SHOP">
+            <img src="assets/case-commercial.jpg" alt="高級商業空間案例" />
+            <div class="work-card__body">
+              <span>02</span>
+              <h3>商業空間</h3>
+              <a href="case-commercial.html" data-i18n="caseButton" aria-label="閱讀更多商業空間案例">
+                閱讀更多
+              </a>
+            </div>
+          </article>
+          <article class="work-card reveal magnetic" data-cursor="OFFICE">
+            <img src="assets/case-office.jpg" alt="高級辦公展間案例" />
+            <div class="work-card__body">
+              <span>03</span>
+              <h3>辦公展間</h3>
+              <a href="case-office.html" data-i18n="caseButton" aria-label="閱讀更多辦公展間案例">
+                閱讀更多
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="studio section-motion section-motion--light" id="studio">
+        <div class="studio__text">
+          <p class="eyebrow reveal">About Lean Dev Studio</p>
+          <h2 class="reveal">關於我們</h2>
+          <p class="reveal" data-i18n="studioCopy">
+            我們協助台灣室內設計公司製作能展現品牌質感、作品價值與專業信任感的網站。從網站企劃、設計、前端互動、CMS 後台、多語言內容到上線後維護，都可以依照預算與需求一起規劃。
+          </p>
+        </div>
+        <div class="studio__panel reveal">
+          <dl>
+            <div>
+              <dt>Website Planning</dt>
+              <dd data-i18n="studioPoint1">先整理品牌定位、作品分類與詢問流程，再設計適合成交的網站架構。</dd>
+            </div>
+            <div>
+              <dt>Design & Development</dt>
+              <dd data-i18n="studioPoint2">製作高質感視覺、滑順動畫與手機版體驗，讓作品看起來更有價值。</dd>
+            </div>
+            <div>
+              <dt>CMS & Maintenance</dt>
+              <dd data-i18n="studioPoint3">可加入後台更新作品與消息，也能提供公開後的保守維護與小幅修改。</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="process-flow section-motion section-motion--dark" id="process">
+        <div class="service-hero">
+          <div class="service-hero__copy">
+            <p class="eyebrow reveal">Service</p>
+            <h2 class="reveal" data-i18n="serviceTitle">客製網站設計，讓作品被看見、讓詢問更自然。</h2>
+            <p class="section-copy reveal" data-i18n="serviceCopy">
+              依照室內設計公司的品牌風格、作品類型與業務目標，規劃專屬網站視覺、頁面架構與後台功能。從形象展示到作品管理、SEO 基礎設定與上線維護，都能依預算分階段製作。
+            </p>
+            <ul class="service-list reveal" aria-label="Service highlights">
+              <li data-i18n="servicePoint1">依品牌質感客製視覺設計</li>
+              <li data-i18n="servicePoint2">全站支援手機、平板與桌機瀏覽</li>
+              <li data-i18n="servicePoint3">可加入 CMS 後台、SEO 欄位與多語內容</li>
+            </ul>
+          </div>
+          <div class="service-types reveal" aria-label="Website service types">
+            <article>
+              <img src="assets/case-residence.jpg" alt="室內設計形象網站服務" />
+              <div>
+                <span>01</span>
+                <h3 data-i18n="serviceType1">形象網站設計</h3>
+              </div>
+            </article>
+            <article>
+              <img src="assets/case-commercial.jpg" alt="室內設計作品集網站服務" />
+              <div>
+                <span>02</span>
+                <h3 data-i18n="serviceType2">作品案例網站</h3>
+              </div>
+            </article>
+            <article>
+              <img src="assets/case-office.jpg" alt="室內設計 CMS 後台服務" />
+              <div>
+                <span>03</span>
+                <h3 data-i18n="serviceType3">CMS 後台建置</h3>
+              </div>
+            </article>
+            <article>
+              <img src="assets/hero-interior.png" alt="室內設計 SEO 與多語網站服務" />
+              <div>
+                <span>04</span>
+                <h3 data-i18n="serviceType4">SEO 與多語設定</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="service-process">
+          <div class="service-process__head reveal">
+            <p class="eyebrow">Service Process</p>
+            <h3 data-i18n="serviceProcessTitle">服務流程，用心對待每一步</h3>
+          </div>
+          <ol class="timeline">
+            <li class="reveal">
+              <span>01</span>
+              <h3 data-i18n="flowTitle1">確認網站需求</h3>
+              <p data-i18n="flow1">討論網站架構、品牌風格、作品分類、功能需求與預算範圍。</p>
+            </li>
+            <li class="reveal">
+              <span>02</span>
+              <h3 data-i18n="flowTitle2">規劃頁面架構</h3>
+              <p data-i18n="flow2">整理首頁、作品、關於我們、服務內容與聯絡流程，讓訪客更容易諮詢。</p>
+            </li>
+            <li class="reveal">
+              <span>03</span>
+              <h3 data-i18n="flowTitle3">進行網站製作</h3>
+              <p data-i18n="flow3">製作高質感視覺、互動動畫、手機版體驗、多語內容與必要後台功能。</p>
+            </li>
+            <li class="reveal">
+              <span>04</span>
+              <h3 data-i18n="flowTitle4">修改確認與上線</h3>
+              <p data-i18n="flow4">公開前確認內容與樣式，完成上線設定，並可接續保守維護與小幅更新。</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="cms section-motion" id="cms">
+        <div class="section-head section-head--center">
+          <p class="eyebrow reveal">CMS / Dashboard</p>
+          <h2 class="reveal" data-i18n="cmsTitle">作品與消息，自己也能優雅更新。</h2>
+          <p class="section-copy reveal" data-i18n="cmsCopy">
+            後台可依預算與需求調整。基本方案可管理作品與最新消息，進階方案可加入多語內容、表單管理、SEO 欄位與權限設定。
+          </p>
+        </div>
+        <div class="dashboard-demo reveal" aria-label="CMS dashboard mockup">
+          <aside>
+            <strong>Studio CMS</strong>
+            <span>Projects</span>
+            <span>Articles</span>
+            <span>SEO Fields</span>
+            <span>Inquiry</span>
+          </aside>
+          <div class="dashboard-demo__main">
+            <div class="dashboard-demo__bar">
+              <span>Project Editor</span>
+              <button type="button">Publish</button>
+            </div>
+            <div class="dashboard-demo__grid">
+              <div>
+                <small>Title</small>
+                <strong>Stone Light Residence</strong>
+              </div>
+              <div>
+                <small>Language</small>
+                <strong>ZH / EN</strong>
+              </div>
+              <div>
+                <small>SEO Status</small>
+                <strong>Ready</strong>
+              </div>
+              <div>
+                <small>Images</small>
+                <strong>24 files</strong>
+              </div>
+            </div>
+            <div class="dashboard-demo__rows">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <h3>Project Management</h3>
+            <p data-i18n="cmsFeature1">新增、編輯、排序作品案例，包含分類、坪數、地點、年份與圖片。</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>News / Blog</h3>
+            <p data-i18n="cmsFeature2">發布裝修知識、媒體報導、品牌消息，增加網站內容厚度。</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Multilingual Content</h3>
+            <p data-i18n="cmsFeature3">可依需求支援繁中、英文、日文等多語欄位。</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Inquiry Flow</h3>
+            <p data-i18n="cmsFeature4">收集詢問資料，整理預算、需求類型與聯絡狀態。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="seo section-motion section-motion--light" id="seo">
+        <div class="process__visual reveal" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="process__text">
+          <p class="eyebrow reveal">SEO Foundation</p>
+          <h2 class="reveal" data-i18n="seoTitle">不只好看，也讓正在找設計公司的客戶更容易遇見你。</h2>
+          <p class="reveal" data-i18n="seoCopy">
+            可追加設定基礎 SEO：頁面標題、描述、Open Graph 分享圖、作品分類、圖片 alt、網站速度與搜尋引擎提交。也能協助規劃「台北室內設計」「商業空間設計」等關鍵字方向。
+          </p>
+          <div class="stats">
+            <div class="reveal">
+              <strong data-count="5">0</strong>
+              <span>basic settings</span>
+            </div>
+            <div class="reveal">
+              <strong data-count="3">0</strong>
+              <span>language paths</span>
+            </div>
+            <div class="reveal">
+              <strong data-count="1">0</strong>
+              <span>launch checklist</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing section-motion" id="pricing">
+        <div class="section-head">
+          <p class="eyebrow reveal">Pricing</p>
+          <h2 class="reveal" data-i18n="pricingTitle">從清楚的預算開始，依照品牌需求逐步升級。</h2>
+          <p class="section-copy reveal" data-i18n="pricingCopy">
+            基本製作費約 NT$30,000 起。實際金額會依頁面數、作品數量、多語言、CMS 後台功能、SEO 設定與客製互動效果而調整。
+          </p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <p>Website Build</p>
+            <strong>NT$30,000+</strong>
+            <span data-i18n="priceBuild">形象首頁、作品展示、公司介紹、聯絡表單等。</span>
+          </article>
+          <article class="price-card reveal price-card--dark">
+            <p>CMS / SEO Add-on</p>
+            <strong>Custom</strong>
+            <span data-i18n="priceAddon">後台、多語內容、SEO 欄位、文章系統依需求估價。</span>
+          </article>
+          <article class="price-card reveal">
+            <p>Monthly Care</p>
+            <strong>NT$1,000-1,500</strong>
+            <span data-i18n="priceCare">輕微修改、備份、狀態確認、操作支援與基本維護。</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p class="eyebrow reveal">Prototype Ready</p>
+        <h2 class="reveal" data-i18n="contactTitle">讓網站成為你的線上門面，也成為客戶主動諮詢的入口。</h2>
+        <p class="contact__copy reveal" data-i18n="contactCopy">
+          可依實際室內設計公司的作品、品牌調性與預算，調整成正式提案網站。
+        </p>
+        <a class="contact__link magnetic reveal" href="https://leandevstudio.com" data-cursor="VISIT">
+          leandevstudio.com
+        </a>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

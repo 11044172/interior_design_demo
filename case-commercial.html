@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Commercial Case | Lean Dev Studio Interior Demo</title>
+    <meta
+      name="description"
+      content="Commercial interior case detail page for the Lean Dev Studio interior website demo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true">
+      <span class="cursor__ring"></span>
+      <span class="cursor__dot"></span>
+      <span class="cursor__label">VIEW</span>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand magnetic" href="index.html#top" data-cursor="HOME">LDS / Interior</a>
+      <nav aria-label="Primary navigation">
+        <a class="magnetic" href="index.html#showcase" data-cursor="WORKS">Showcase</a>
+        <a class="magnetic" href="index.html#process" data-cursor="FLOW">Service</a>
+        <a class="magnetic" href="index.html#cms" data-cursor="CMS">CMS</a>
+        <a class="magnetic" href="index.html#seo" data-cursor="SEO">SEO</a>
+        <a class="magnetic" href="index.html#pricing" data-cursor="PRICE">Pricing</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero case-hero">
+        <img class="hero__image" src="assets/case-commercial.jpg" alt="高級商業空間案例" />
+        <div class="hero__shade" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="eyebrow reveal">Case 02 / Commercial</p>
+          <h1 class="reveal">Amber Retail Gallery</h1>
+          <p class="hero__copy reveal">
+            商業空間的案例頁需要同時說明品牌、客流與記憶點。這個頁面以沉穩色調和強烈視覺節奏，呈現零售、美業與餐飲空間都能使用的展示方式。
+          </p>
+          <a class="hero__button magnetic reveal" href="index.html#showcase" data-cursor="BACK">Back to Works</a>
+          <div class="case-meta reveal" aria-label="Project metadata">
+            <div><span>Type</span><strong>Commercial</strong></div>
+            <div><span>Area</span><strong>28 Ping</strong></div>
+            <div><span>Location</span><strong>Taichung</strong></div>
+            <div><span>Year</span><strong>2026</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section case-intro section-motion section-motion--light">
+        <div class="case-intro__lead">
+          <p class="eyebrow reveal">Project Story</p>
+          <h2 class="reveal">把品牌個性轉成能被記住的空間動線。</h2>
+        </div>
+        <div class="case-points">
+          <p class="case-intro__copy reveal">
+            商業案例頁的重點在於讓業主理解設計如何回應營運。頁面以「入口吸引、行走節奏、拍照場景、收銀與服務流程」拆解，讓設計不只好看，也能連到實際商業目的。
+          </p>
+          <article class="case-point reveal">
+            <span>01</span>
+            <h3>入口辨識</h3>
+            <p>以材質對比與燈光層次加強第一眼印象，讓品牌門面在街景與社群分享中更容易被記住。</p>
+          </article>
+          <article class="case-point reveal">
+            <span>02</span>
+            <h3>客流節奏</h3>
+            <p>透過展示區、停留區與服務區的分段，讓顧客自然移動，也讓頁面瀏覽有明確起承轉合。</p>
+          </article>
+          <article class="case-point reveal">
+            <span>03</span>
+            <h3>品牌拍點</h3>
+            <p>將主視覺牆、材質局部與燈光焦點獨立呈現，讓案例頁也能成為品牌提案的一部分。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section case-gallery section-motion section-motion--dark" aria-label="Commercial gallery">
+        <figure class="reveal">
+          <img src="assets/case-commercial-gallery-01.png" alt="商業空間入口與展示區" />
+          <figcaption>Retail / Brand Memory</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="assets/case-commercial-gallery-02.png" alt="商業空間材質細節" />
+          <figcaption>Detail / Warm Contrast</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section case-next section-motion section-motion--dark section-motion--linger">
+        <div>
+          <p class="eyebrow reveal">Next Case</p>
+          <h2 class="reveal">辦公展間案例，建立更清楚的專業信任。</h2>
+        </div>
+        <a class="case-link magnetic reveal" href="case-office.html" data-cursor="NEXT">View Office</a>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

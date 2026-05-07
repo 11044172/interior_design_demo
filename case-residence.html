@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Residence Case | Lean Dev Studio Interior Demo</title>
+    <meta
+      name="description"
+      content="Residence interior case detail page for the Lean Dev Studio interior website demo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true">
+      <span class="cursor__ring"></span>
+      <span class="cursor__dot"></span>
+      <span class="cursor__label">VIEW</span>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand magnetic" href="index.html#top" data-cursor="HOME">LDS / Interior</a>
+      <nav aria-label="Primary navigation">
+        <a class="magnetic" href="index.html#showcase" data-cursor="WORKS">Showcase</a>
+        <a class="magnetic" href="index.html#process" data-cursor="FLOW">Service</a>
+        <a class="magnetic" href="index.html#cms" data-cursor="CMS">CMS</a>
+        <a class="magnetic" href="index.html#seo" data-cursor="SEO">SEO</a>
+        <a class="magnetic" href="index.html#pricing" data-cursor="PRICE">Pricing</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero case-hero">
+        <img class="hero__image" src="assets/case-residence.jpg" alt="高級住宅空間案例" />
+        <div class="hero__shade" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="eyebrow reveal">Case 01 / Residence</p>
+          <h1 class="reveal">Stone Light Residence</h1>
+          <p class="hero__copy reveal">
+            以石材、木質與柔和光線組成的住宅作品。頁面設計把大圖、材質細節與生活動線拆成清楚節奏，讓訪客快速感受到家的溫度與設計完成度。
+          </p>
+          <a class="hero__button magnetic reveal" href="index.html#showcase" data-cursor="BACK">Back to Works</a>
+          <div class="case-meta reveal" aria-label="Project metadata">
+            <div><span>Type</span><strong>Residence</strong></div>
+            <div><span>Area</span><strong>42 Ping</strong></div>
+            <div><span>Location</span><strong>Taipei</strong></div>
+            <div><span>Year</span><strong>2026</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section case-intro section-motion section-motion--light">
+        <div class="case-intro__lead">
+          <p class="eyebrow reveal">Project Story</p>
+          <h2 class="reveal">用安靜的材質層次，放大日常生活的質感。</h2>
+        </div>
+        <div class="case-points">
+          <p class="case-intro__copy reveal">
+            這個案例頁示範室內設計公司可以如何呈現住宅作品。不是只放照片，而是把設計重點、客戶需求、動線安排與材質選擇整理成可閱讀的故事，讓潛在客戶理解專業價值。
+          </p>
+          <article class="case-point reveal">
+            <span>01</span>
+            <h3>光線與材質</h3>
+            <p>以低彩度石材與溫潤木皮建立主調，搭配間接照明讓公共區域保有沉穩而明亮的表情。</p>
+          </article>
+          <article class="case-point reveal">
+            <span>02</span>
+            <h3>開放式動線</h3>
+            <p>客廳、餐廳與廚房以連續視線串起，讓家庭互動更自然，也讓空間感在手機畫面中仍然清楚。</p>
+          </article>
+          <article class="case-point reveal">
+            <span>03</span>
+            <h3>收納整合</h3>
+            <p>將展示、收納與立面比例整合，頁面可用重點段落補足照片無法完整說明的設計邏輯。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section case-gallery section-motion section-motion--dark" aria-label="Residence gallery">
+        <figure class="reveal">
+          <img src="assets/case-residence-gallery-01.png" alt="住宅客廳空間" />
+          <figcaption>Living / Material Balance</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="assets/case-residence-gallery-02.png" alt="住宅光線與材質細節" />
+          <figcaption>Detail / Quiet Light</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section case-next section-motion section-motion--dark section-motion--linger">
+        <div>
+          <p class="eyebrow reveal">Next Case</p>
+          <h2 class="reveal">商業空間案例，讓品牌記憶點更鮮明。</h2>
+        </div>
+        <a class="case-link magnetic reveal" href="case-commercial.html" data-cursor="NEXT">View Commercial</a>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
