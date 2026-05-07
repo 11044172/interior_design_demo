@@ -1,3 +1,5 @@
+document.documentElement.classList.add("is-enhanced");
+
 const cursor = document.querySelector(".cursor");
 const ring = document.querySelector(".cursor__ring");
 const label = document.querySelector(".cursor__label");

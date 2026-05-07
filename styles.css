@@ -827,6 +827,9 @@ h2 {
   padding: 18px;
   border: 1px solid rgba(255, 253, 248, 0.14);
   background: rgba(255, 253, 248, 0.06);
+}
+
+.is-enhanced .dashboard-demo__grid div {
   opacity: 0;
   transform: translateY(18px);
   transition:
@@ -876,6 +879,9 @@ h2 {
   height: 42px;
   border: 1px solid rgba(255, 253, 248, 0.1);
   background: linear-gradient(90deg, rgba(255, 253, 248, 0.12), rgba(255, 253, 248, 0.03));
+}
+
+.is-enhanced .dashboard-demo__rows span {
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform 780ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -1283,7 +1289,7 @@ h2 {
   margin-top: 20px;
 }
 
-.reveal {
+.is-enhanced .reveal {
   opacity: 0;
   transform: translateY(34px);
   transition:
@@ -1291,7 +1297,7 @@ h2 {
     transform 780ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.reveal.is-in {
+.is-enhanced .reveal.is-in {
   opacity: 1;
   transform: translateY(0);
 }
